@@ -21,9 +21,11 @@ on_off = 1
 for i in range(1, len(num_list)):
 
     if num_list[i] == '0':
+        # 알파벳으로 변경 불가능한 경우
         if num_list[i - 1] + num_list[i] == '00' or int(num_list[i - 1]) > 2:
             on_off = 0
             break
+            
         elif int(num_list[i - 1]) <= 2:
             res.append(patturn[cnt - 1])
             cnt = 1
@@ -37,7 +39,7 @@ for i in range(1, len(num_list)):
         cnt = 1
 
 
-if cnt != 0:
+if cnt != 1:
     res.append(patturn[cnt])
 
 
