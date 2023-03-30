@@ -21,7 +21,6 @@ def recur(idx):
                 maxN = int(a)
             if int(a) < minN:
                 minN = int(a)
-        # result.append(res[:])
     else:
         for i in range(len(N_list)):
             if visited[i] == 0:
@@ -41,18 +40,6 @@ res = [0] * (k + 1)
 result = []
 recur(0)
 l = 0
-
-# r = len(result) - 1
-# while 1:
-#     if check(result[r], arr):
-#         print(''.join(str(s) for s in result[r]))
-#         break
-#     r -= 1
-# while 1:
-#     if check(result[l], arr):
-#         print(''.join(str(s) for s in result[l]))
-#         break
-#     l += 1
 
 if len(list(str(maxN))) < k + 1:
     maxN = '0'+str(maxN)
