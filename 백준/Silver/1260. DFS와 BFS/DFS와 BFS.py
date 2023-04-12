@@ -46,8 +46,5 @@ while queue:
         res2[j] = node
         j += 1
 
-
-
-
 print(*res1[:i])
 print(*res2[:j])
